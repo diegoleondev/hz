@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osciloscopio</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="home">
+      <section class="dashboard">
+        <h1 class="dashboard__title">Osciloscopio</h1>
+        <hr />
+        <nav class="dashboard__nav">
+          <button id="susresBtn" class="button">Iniciar Escucha</button>
+          <button id="captureSampleBtn" class="button" disabled>
+            Iniciar Osciloscopio
+          </button>
+          <a href="../../index.html">Paguina de Inicio</a>
+        </nav>
+        <hr />
+        <div id="messageViewer" class="dashboard__messagebar">
+          <span class="dashboard__message">Bienvenido </span>
+
+          <span class="dashboard__message"> Pendiente </span>
+        </div>
+      </section>
+      <main>
+        <canvas id="canvasWiewer" class="canvas"></canvas>
+      </main>
+    </article>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
